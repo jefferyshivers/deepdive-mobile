@@ -13,6 +13,7 @@ body {
   /*smooth scrolling*/
   -webkit-overflow-scrolling: touch;
   overflow-x:hidden;
+  caret-color: white;
 }
 
 a {
