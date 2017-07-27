@@ -290,167 +290,166 @@ function load_artist_page() {
 							} else {
 
 								if (content_obj['platform'] == 'instagram') {
-									console.log('yes')
 
-									/// left section
+									// /// left section
 
-									$('<div/>', {
-							    	'class':'instagram-content-item',
-							    	'id':key
-									}).appendTo('.inner-body .contents')
+									// $('<div/>', {
+							  //   	'class':'instagram-content-item',
+							  //   	'id':key
+									// }).appendTo('.inner-body .contents')
 
-									var content_left_id = key + 'content-left'
-									$('<div/>', {
-							    	'class':'content-left',
-							    	'id':content_left_id
-									}).appendTo('#' + key)	
+									// var content_left_id = key + 'content-left'
+									// $('<div/>', {
+							  //   	'class':'content-left',
+							  //   	'id':content_left_id
+									// }).appendTo('#' + key)	
 
-									var inner_div_id = content_left_id + '-inner'
-									$('<div/>', {
-							    	'class':'inner-div',
-							    	'id':inner_div_id
-									}).appendTo('#' + content_left_id)
+									// var inner_div_id = content_left_id + '-inner'
+									// $('<div/>', {
+							  //   	'class':'inner-div',
+							  //   	'id':inner_div_id
+									// }).appendTo('#' + content_left_id)
 
-									// up
-									var up_id = inner_div_id + '-up'
-									$('<div/>', {
-							    	'class':'micro',
-							    	'id':up_id
-									}).appendTo('#' + inner_div_id)
-									$('<i/>', {
-							    	'class':'material-icons',
-							    	'text':'arrow_drop_up',
-							    	'style':'font-size:36pt;'
-									}).appendTo('#' + up_id)
+									// // up
+									// var up_id = inner_div_id + '-up'
+									// $('<div/>', {
+							  //   	'class':'micro',
+							  //   	'id':up_id
+									// }).appendTo('#' + inner_div_id)
+									// $('<i/>', {
+							  //   	'class':'material-icons',
+							  //   	'text':'arrow_drop_up',
+							  //   	'style':'font-size:36pt;'
+									// }).appendTo('#' + up_id)
 
-									// number of votes
-									var vote_num = 3100 - (i * 150 + Math.floor(Math.random()*58))
-									$('<div/>', {
-							    	'class':'micro',
-							    	'text':vote_num
-									}).appendTo('#' + inner_div_id)
+									// // number of votes
+									// var vote_num = 3100 - (i * 150 + Math.floor(Math.random()*58))
+									// $('<div/>', {
+							  //   	'class':'micro',
+							  //   	'text':vote_num
+									// }).appendTo('#' + inner_div_id)
 
-									// down
-									var down_id = inner_div_id + '-down'
-									$('<div/>', {
-							    	'class':'micro',
-							    	'id':down_id
-									}).appendTo('#' + inner_div_id)
-									$('<i/>', {
-							    	'class':'material-icons',
-							    	'text':'arrow_drop_down',
-							    	'style':'font-size:36pt;'
-									}).appendTo('#' + down_id)
+									// // down
+									// var down_id = inner_div_id + '-down'
+									// $('<div/>', {
+							  //   	'class':'micro',
+							  //   	'id':down_id
+									// }).appendTo('#' + inner_div_id)
+									// $('<i/>', {
+							  //   	'class':'material-icons',
+							  //   	'text':'arrow_drop_down',
+							  //   	'style':'font-size:36pt;'
+									// }).appendTo('#' + down_id)
 
-									// gutter
-									$('<div/>', {
-							    	'class':'micro'
-									}).appendTo('#' + inner_div_id)
+									// // gutter
+									// $('<div/>', {
+							  //   	'class':'micro'
+									// }).appendTo('#' + inner_div_id)
 
-									// like
-									var like_id = inner_div_id + '-like'
-									$('<div/>', {
-							    	'class':'micro',
-							    	'id':like_id
-							    	// 'text':'lk'
-									}).appendTo('#' + inner_div_id)
-									$('<i/>', {
-							    	'class':'material-icons',
-							    	'text':'favorite'
-							    	// 'text':'lk'
-									}).appendTo('#' + like_id)
-
+									// // like
+									// var like_id = inner_div_id + '-like'
+									// $('<div/>', {
+							  //   	'class':'micro',
+							  //   	'id':like_id
+							  //   	// 'text':'lk'
+									// }).appendTo('#' + inner_div_id)
+									// $('<i/>', {
+							  //   	'class':'material-icons',
+							  //   	'text':'favorite'
+							  //   	// 'text':'lk'
+									// }).appendTo('#' + like_id)
 
 
 
-									// tweet section
-									var mid_id = key + '-mid'
-									$('<i/>', {
-							    	'class':'instagram-mid',
-							    	'id':mid_id
-									}).appendTo('#' + key)
-									$('#' + mid_id).append(content_obj['url'])
+
+									// // tweet section
+									// var mid_id = key + '-mid'
+									// $('<i/>', {
+							  //   	'class':'instagram-mid',
+							  //   	'id':mid_id
+									// }).appendTo('#' + key)
+									// $('#' + mid_id).append(content_obj['url'])
 
 								} else {
 
 									if (content_obj['platform'] == 'twitter') {
 
-										/// left section
+										// /// left section
 
-										$('<div/>', {
-								    	'class':'twitter-content-item',
-								    	'id':key
-										}).appendTo('.inner-body .contents')
+										// $('<div/>', {
+								  //   	'class':'twitter-content-item',
+								  //   	'id':key
+										// }).appendTo('.inner-body .contents')
 
-										var content_left_id = key + 'content-left'
-										$('<div/>', {
-								    	'class':'content-left',
-								    	'id':content_left_id
-										}).appendTo('#' + key)	
+										// var content_left_id = key + 'content-left'
+										// $('<div/>', {
+								  //   	'class':'content-left',
+								  //   	'id':content_left_id
+										// }).appendTo('#' + key)	
 
-										var inner_div_id = content_left_id + '-inner'
-										$('<div/>', {
-								    	'class':'inner-div',
-								    	'id':inner_div_id
-										}).appendTo('#' + content_left_id)
+										// var inner_div_id = content_left_id + '-inner'
+										// $('<div/>', {
+								  //   	'class':'inner-div',
+								  //   	'id':inner_div_id
+										// }).appendTo('#' + content_left_id)
 
-										// up
-										var up_id = inner_div_id + '-up'
-										$('<div/>', {
-								    	'class':'micro',
-								    	'id':up_id
-										}).appendTo('#' + inner_div_id)
-										$('<i/>', {
-								    	'class':'material-icons',
-								    	'text':'arrow_drop_up',
-								    	'style':'font-size:36pt;'
-										}).appendTo('#' + up_id)
+										// // up
+										// var up_id = inner_div_id + '-up'
+										// $('<div/>', {
+								  //   	'class':'micro',
+								  //   	'id':up_id
+										// }).appendTo('#' + inner_div_id)
+										// $('<i/>', {
+								  //   	'class':'material-icons',
+								  //   	'text':'arrow_drop_up',
+								  //   	'style':'font-size:36pt;'
+										// }).appendTo('#' + up_id)
 
-										// number of votes
-										var vote_num = 3100 - (i * 150 + Math.floor(Math.random()*58))
-										$('<div/>', {
-								    	'class':'micro',
-								    	'text':vote_num
-										}).appendTo('#' + inner_div_id)
+										// // number of votes
+										// var vote_num = 3100 - (i * 150 + Math.floor(Math.random()*58))
+										// $('<div/>', {
+								  //   	'class':'micro',
+								  //   	'text':vote_num
+										// }).appendTo('#' + inner_div_id)
 
-										// down
-										var down_id = inner_div_id + '-down'
-										$('<div/>', {
-								    	'class':'micro',
-								    	'id':down_id
-										}).appendTo('#' + inner_div_id)
-										$('<i/>', {
-								    	'class':'material-icons',
-								    	'text':'arrow_drop_down',
-								    	'style':'font-size:36pt;'
-										}).appendTo('#' + down_id)
+										// // down
+										// var down_id = inner_div_id + '-down'
+										// $('<div/>', {
+								  //   	'class':'micro',
+								  //   	'id':down_id
+										// }).appendTo('#' + inner_div_id)
+										// $('<i/>', {
+								  //   	'class':'material-icons',
+								  //   	'text':'arrow_drop_down',
+								  //   	'style':'font-size:36pt;'
+										// }).appendTo('#' + down_id)
 
-										// gutter
-										$('<div/>', {
-								    	'class':'micro'
-										}).appendTo('#' + inner_div_id)
+										// // gutter
+										// $('<div/>', {
+								  //   	'class':'micro'
+										// }).appendTo('#' + inner_div_id)
 
-										// like
-										var like_id = inner_div_id + '-like'
-										$('<div/>', {
-								    	'class':'micro',
-								    	'id':like_id
-								    	// 'text':'lk'
-										}).appendTo('#' + inner_div_id)
-										$('<i/>', {
-								    	'class':'material-icons',
-								    	'text':'favorite'
-								    	// 'text':'lk'
-										}).appendTo('#' + like_id)
+										// // like
+										// var like_id = inner_div_id + '-like'
+										// $('<div/>', {
+								  //   	'class':'micro',
+								  //   	'id':like_id
+								  //   	// 'text':'lk'
+										// }).appendTo('#' + inner_div_id)
+										// $('<i/>', {
+								  //   	'class':'material-icons',
+								  //   	'text':'favorite'
+								  //   	// 'text':'lk'
+										// }).appendTo('#' + like_id)
 
 
-										// tweet section
-										var mid_id = key + '-mid'
-										$('<i/>', {
-								    	'class':'twitter-mid',
-								    	'id':mid_id
-										}).appendTo('#' + key)
-										$('#' + mid_id).append(content_obj['url'])
+										// // tweet section
+										// var mid_id = key + '-mid'
+										// $('<i/>', {
+								  //   	'class':'twitter-mid',
+								  //   	'id':mid_id
+										// }).appendTo('#' + key)
+										// $('#' + mid_id).append(content_obj['url'])
 
 									}
 								}
