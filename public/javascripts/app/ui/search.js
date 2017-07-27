@@ -1,21 +1,17 @@
 
 
 
-$('.top-nav .search-icon').click(function(){
-	var search_val = document.getElementById('top-search-field').value
-	if (search_val != "") {
-		window.location = "/search=" + search_val			
-	}
-})
+// $('.top-nav .search-icon').click(function(){
+// 	var search_val = document.getElementById('top-search-field').value
+// 	if (search_val != "") {
+// 		window.location = "/search=" + search_val			
+// 	}
+// })
 
-$('.top-nav #top-search-field').keypress(function(e) {
-	if (e.which == 13) {
-		var search_val = document.getElementById('top-search-field').value
-		if (search_val != "") {
-			window.location = "/search=" + search_val			
-		}
-	}
-});
+
+// look at top-nav.js for the search icon button
+
+
 
 
 

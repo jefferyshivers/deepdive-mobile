@@ -177,3 +177,27 @@
 // 	})
 
 // })
+
+
+
+
+
+
+
+
+$('.search-icon').click(function(){
+	$('.top-nav-searchover').css('display','block')
+})
+
+$('.top-nav-searchover .close').click(function(){
+	$('.top-nav-searchover').css('display','none')
+})
+
+$('.top-nav-searchover input').keypress(function(e) {
+	if (e.which == 13) {
+		var search_val = document.getElementById('new-query').value
+		if (search_val != "") {
+			window.location = "/search=" + search_val			
+		}
+	}
+});
