@@ -575,6 +575,7 @@ $('.main .meta > .toggle > .holder').click(function(){
 		'display':'block'
 	})
 	$('body').css({
+		'-webkit-overflow-scrolling':'touch',
 		'overflow':'hidden'
 	})
 	$('.main').css('z-index','100')
@@ -588,7 +589,8 @@ $('.main > .body > .left-nav-tint').click(function(){
 	$('.main > .body > .left-nav-tint').css({
 		'display':'none'
 	})
-	// $('body').css({
-	// 	'overflow-y':'scroll'
-	// })
+	$('body').css({
+		'-webkit-overflow-scrolling':'touch',
+		'overflow-y':'scroll'
+	})
 })
