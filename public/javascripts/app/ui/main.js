@@ -18,7 +18,7 @@
 top_artists = [
 	"Frank Ocean","Yo-Yo Ma","Chino","The Japanese House",
 	"SZA","Kendrick Lamar","Lorde",
-	"FKA Twigs","Drake","Selena Gomez","Ed Sheeran","Post Malone","Justin Bieber"]
+	"FKA Twigs","Drake","Selena Gomez","Ed Sheeran","Post Malone"]
 
 function loadpage_MAIN() {
 

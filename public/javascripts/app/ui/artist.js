@@ -171,8 +171,8 @@ function load_artist_page() {
 
 							// video section
 
-							$('<iframe/>', {
-					    	'style':'float:left;width:400px;height:250px;frameborder:none;allowfullscreen;box-shadow:rgba(0,0,0,.2) 0 0 10px;',
+							$('<iframe/>', { // was width:300px height:250px
+					    	'style':'float:left;width:200px;height:150px;frameborder:none;allowfullscreen;box-shadow:rgba(0,0,0,.2) 0 0 10px;',
 					    	'src':src
 							}).appendTo('#' + key)
 
@@ -282,7 +282,7 @@ function load_artist_page() {
 							var block_id = key + '-block'
 							$('<iframe/>', {
 								'src':src,
-								'style':'width:400px; height:250px; scrolling:no; frameborder:no;'
+								'style':'width:200px; height:150px; scrolling:no; frameborder:no;'
 							}).appendTo('#' + key)
 
 

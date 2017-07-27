@@ -12,6 +12,7 @@ body {
   -webkit-tap-hightlight-color: rgba(0,0,0,0) 
   /*smooth scrolling*/
   -webkit-overflow-scrolling: touch;
+  overflow-x:hidden;
 }
 
 a {
