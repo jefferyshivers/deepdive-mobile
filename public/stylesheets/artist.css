@@ -325,7 +325,6 @@
 	z-index: 11;
 	display: flex;
 	justify-content: center;
-	/*background: yellow;*/
 }
 
 .main > .body > .inner-body > .top > .meta {
@@ -343,6 +342,7 @@
 	float: left;
 	width: 100%;
 	height: 30px;
+	font-size: 20pt;
 }
 .main .meta > .genre {
 	position: relative;
@@ -350,7 +350,7 @@
 	width: 100%;
 	height: 30px;
 	color: rgb(120,120,120);
-	font-size: 18pt;
+	font-size: 14pt;
 }
 .main .meta > .toggle {
 	position: relative;
