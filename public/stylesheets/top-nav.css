@@ -154,6 +154,7 @@ input {
 	border-bottom: 2px solid gray;
 	color: white;
 	font-size: 16pt;
+	border-radius: 0;
 }
 
 
