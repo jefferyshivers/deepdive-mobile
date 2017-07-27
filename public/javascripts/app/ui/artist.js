@@ -559,3 +559,13 @@ function load_artist_page() {
 }
 
 // contentSortObject(artist) is from db/search.js
+
+
+
+
+
+
+
+$('.main .meta > .toggle > .holder').click(function(){
+	
+})
