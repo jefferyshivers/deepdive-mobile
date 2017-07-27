@@ -59,7 +59,7 @@ function searchQuery() {
 
 
 
-	// content search
+	// // content search
 
   $('<div/>', {
   	'class':'results-inner-top',
@@ -67,20 +67,21 @@ function searchQuery() {
 		'style':'color:rgb(220,220,220)'
 	}).appendTo('.search-page-main')	
 
+ //  $('<div/>', {
+	// 	'class':'content-results'
+	// }).appendTo('.search-page-main')
+
+	// contentSearch(query)	
+
+
+
   $('<div/>', {
-		'class':'content-results'
+		'text':'Content results coming to mobile soon!'
 	}).appendTo('.search-page-main')
-
-	contentSearch(query)	
-
-
-
 
   $('<div/>', {
 		'class':'bottom-padding'
 	}).appendTo('.search-page-main')
-
-
 
 
 }
