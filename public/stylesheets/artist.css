@@ -30,21 +30,45 @@
 }
 
 .main > .body > .left-nav {
-	position: absolute;
+	position: fixed;
 	left: 0;
 	top: 0;
 	width: 200px;
-	height: 100%;
+	height: calc(100% - 0px);
 	background: rgb(60,60,60);	
 	color: white;
 	box-shadow: rgba(20,20,20,.3) 10px 0px 10px;
-	display:none;
+	display: none;
+	z-index: 100;
+}
+.main > .body > .left-nav-tint {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(60,60,60,.5);
+	display: none;
+	z-index: 39;
+}
+
+
+.main > .body > .left-nav > .topper {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 50px;
+	background: rgb(80,80,80);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .main > .body > .left-nav > .top {
 	position: absolute;
 	left: 0;
-	top: 0;
+	top: 50px;
 	width: 100%;
 	height: 160px;
 }

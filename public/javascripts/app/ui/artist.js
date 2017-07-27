@@ -567,5 +567,28 @@ function load_artist_page() {
 
 
 $('.main .meta > .toggle > .holder').click(function(){
-	
+	$('.main > .body > .left-nav').css({
+		'display':'block',
+		'top':'0'
+	})
+	$('.main > .body > .left-nav-tint').css({
+		'display':'block'
+	})
+	$('body').css({
+		'overflow-y':'hidden'
+	})
+	$('.main').css('z-index','100')
+})
+
+$('.main > .body > .left-nav-tint').click(function(){
+	$('.main > .body > .left-nav').css({
+		'display':'none'
+	})
+	$('.main > .body > .left-nav-tint').css({
+		'display':'none'
+	})
+	$('body').css({
+		'overflow-y':'scroll'
+	})
+	$('.main').css('z-index','10')	
 })

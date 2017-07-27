@@ -462,7 +462,7 @@ function load_profile_page() {
 						'class':'collection-item',
 						'id':id
 					}).click(function(){
-						popup('collection','hi')
+						// popup('collection','hi')
 					}).appendTo('.inner-body .contents')
 
 					var src = '/images/collections/' + i + '.png'
