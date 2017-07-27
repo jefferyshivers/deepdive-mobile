@@ -187,6 +187,7 @@
 
 $('.search-icon').click(function(){
 	$('.top-nav-searchover').css('display','block')
+	$('#new-query').focus()
 })
 
 $('.top-nav-searchover .close').click(function(){
