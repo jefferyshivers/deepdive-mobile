@@ -76,6 +76,29 @@
 	align-items: flex-start;
 	justify-content: flex-start;
 	flex-wrap: wrap;
+
+	display: -webkit-flex;
+	-webkit-justify-content: flex-start;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: wrap;
+
+	/* tweak the where items line up on the row */
+	/* valid values are: flex-start, flex-end, space-between, space-around, stretch */
+
+	-webkit-align-content: flex-start;
+	-webkit-justify-content: flex-start;
+
+
+
+
+
+
+
+
+
+
+
+
 }
 .main > .body > .front-page-main > .front-page-cell {
 	width: 100%;
