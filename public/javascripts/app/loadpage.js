@@ -1,7 +1,7 @@
 function loadpage() {
 
   firebase.auth().onAuthStateChanged(function(user) {
-    if (user && !user.isAnonymous) {
+    // if (user && !user.isAnonymous) {
       // console.log('is user')
       $('#dropdown-profile-container').css({
         'visibility':'visible'
@@ -11,28 +11,30 @@ function loadpage() {
       })
       $('.top-nav .add-and-user').css({'display':'block'})
       $('.top-nav .signup-or-login').css({'display':'none'})
-    } else {
-      // console.log('is not user')
-      $('#dropdown-login-container').css({
-        'visibility':'visible'
-      })
-      $('#dropdown-profile-container').css({
-        'visibility':'hidden'
-      })   
-      $('.top-nav .add-and-user').css({'display':'none'})
-      $('.top-nav .signup-or-login').css({'display':'block'})
+    // } else {
+    //   // console.log('is not user')
+    //   $('#dropdown-login-container').css({
+    //     'visibility':'visible'
+    //   })
+    //   $('#dropdown-profile-container').css({
+    //     'visibility':'hidden'
+    //   })   
+    //   $('.top-nav .add-and-user').css({'display':'none'})
+    //   $('.top-nav .signup-or-login').css({'display':'block'})
 
-      // fallback
+    //   // fallback
 
+    if (!user) {
       firebase.auth().signInAnonymously().catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
         // ...
       });
+    }
 
       
-    }
+    // }
   });  
 
   // load the dropdown profile div
