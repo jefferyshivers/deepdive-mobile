@@ -575,20 +575,20 @@ $('.main .meta > .toggle > .holder').click(function(){
 		'display':'block'
 	})
 	$('body').css({
-		'overflow-y':'hidden'
+		'overflow':'hidden'
 	})
 	$('.main').css('z-index','100')
 })
 
 $('.main > .body > .left-nav-tint').click(function(){
+	$('.main').css('z-index','10')		
 	$('.main > .body > .left-nav').css({
 		'display':'none'
 	})
 	$('.main > .body > .left-nav-tint').css({
 		'display':'none'
 	})
-	$('body').css({
-		'overflow-y':'scroll'
-	})
-	$('.main').css('z-index','10')	
+	// $('body').css({
+	// 	'overflow-y':'scroll'
+	// })
 })
