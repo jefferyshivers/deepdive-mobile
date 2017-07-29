@@ -581,7 +581,7 @@ $('.main .meta > .toggle > .holder').click(function(){
 	$('.main').css('z-index','100')
 })
 
-$('.main > .body > .left-nav-tint').click(function(){
+$('.main > .body > .left-nav-tint').mouseleave(function(){
 	$('.main').css('z-index','10')		
 	$('.main > .body > .left-nav').css({
 		'display':'none'
